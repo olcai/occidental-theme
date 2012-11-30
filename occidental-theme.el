@@ -102,10 +102,15 @@ background and some small tweaks.")
    `(diff-added ((,class (:bold t :foreground "#4E9A06"))))
    `(diff-removed ((,class (:bold t :foreground "#F5666D"))))))
 
+;;;###autoload
+(when (and (boundp 'custom-theme-load-path) load-file-name)
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory (file-name-directory load-file-name))))
+
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
 
 (provide-theme 'occidental)
 
-;;; occidental-theme.el  ends here
+;;; occidental-theme.el ends here
