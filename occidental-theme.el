@@ -100,7 +100,16 @@ background and some small tweaks.")
    `(gnus-cite-2 ((,class (:foreground "#0084C8"))))
 
    `(diff-added ((,class (:bold t :foreground "#4E9A06"))))
-   `(diff-removed ((,class (:bold t :foreground "#F5666D"))))))
+   `(diff-removed ((,class (:bold t :foreground "#F5666D"))))
+   )
+
+  ;;; custom theme variables
+  (custom-theme-set-variables
+   'occidental
+   ;; fill-column-indicator
+   `(fci-rule-color "#0084C8")
+   ))
+
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
