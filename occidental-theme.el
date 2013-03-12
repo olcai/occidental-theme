@@ -62,7 +62,7 @@ background and some small tweaks.")
 
    `(link ((,class (:underline t :foreground "#0066CC"))))
    `(link-visited ((,class (:underline t :foreground "#6799CC"))))
-   `(highlight ((,class (:foreground "white" :background "#4A90D9"))))
+   `(highlight ((,class (:background "#4A90D9"))))
    `(isearch ((,class (:foreground "white" :background "#77A4DD"))))
 
    `(erc-action-face ((,class (:foreground "#F5666D"))))
